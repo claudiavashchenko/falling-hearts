@@ -6,6 +6,13 @@ class Heart {
         this.position = position
         this.speed = speed
     }
+    draw() {
+        const divElement = document.createElement("div")
+        divElement.classList.add("heart")
+        divElement.style.left = this.position + "px"
+       divElement.style.setProperty("--c", this.color)
+        body.append(divElement)
+    }
 }
 
 function addHeart() {
@@ -15,6 +22,7 @@ function addHeart() {
 
     const newHeart = new Heart(randomColor, randonLeft, randomSpeed)
     console.log(newHeart)
+    newHeart.draw()
 }
 
 addHeart()

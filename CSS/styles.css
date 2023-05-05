@@ -6,17 +6,17 @@ body {
     background-color: rgb(250, 240, 230);
 }
 .heart {
-    background-color: blue;
+    background-color: var(--c);
     position: absolute;
     height: 30px;
     width: 30px;
-    top: 50px;
-    left: 50px;
+    top: 0;
+    left: 0;
     transform: rotate(-45deg);
 }
 .heart:before, .heart::after {
     content: "";
-    background-color: blue;
+    background-color: var(--c);
     border-radius: 50%;
     height: 30px;
     width: 30px;
