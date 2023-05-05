@@ -9,9 +9,9 @@ class Heart {
 }
 
 function addHeart() {
-    const randomColor = "#000000"
-    const randonLeft = 40
-    const randomSpeed = 400
+    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16)
+    const randonLeft = Math.floor(Math.random() * window.innerWidth)
+    const randomSpeed = Math.floor(Math.random() * 500)
 
     const newHeart = new Heart(randomColor, randonLeft, randomSpeed)
     console.log(newHeart)
